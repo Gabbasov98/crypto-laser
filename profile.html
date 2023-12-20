@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Profile</title>
+</head>
+
+<body class="m-page not-lines">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="header__logo">
+                        <img class="_view1" src="img/logo.svg" alt="">
+                        <img class="_view2" src="img/logo2.svg" alt="">
+                    </a>
+
+                    <div class="menu">
+                        <nav class="nav">
+                            <a href="" class="nav__link"><span>HOME</span></a>
+                            <a href="" class="nav__link _active"><span>AIRDROP</span></a>
+                            <a href="" class="nav__link"><span>LEADERBOARD</span></a>
+                            <a href="" class="nav__link"><span>devs</span></a>
+                            <a href="" class="nav__link"><span>about</span></a>
+                            <a href="" class="nav__link"><span>bridge</span></a>
+                        </nav>
+
+                        <div class="header-action">
+                            <div class="lang">
+                                <div class="lang__show">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12Z" stroke="#5C5C5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3.59961 9H20.3996" stroke="#5C5C5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3.59961 15H20.3996" stroke="#5C5C5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.4997 3C9.81501 5.69961 8.92188 8.81787 8.92188 12C8.92188 15.1821 9.81501 18.3004 11.4997 21" stroke="#5C5C5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.5 3C14.1847 5.69961 15.0778 8.81787 15.0778 12C15.0778 15.1821 14.1847 18.3004 12.5 21" stroke="#5C5C5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="lang__dropdown">
+                                    <div class="lang__items">
+                                        <a href="" class="lang__item _active"><span>English</span></a>
+                                        <a href="" class="lang__item"><span>ESPAÑOL (ESPAÑA)</span></a>
+                                        <a href="" class="lang__item"><span>BAHASA INDONESIA</span></a>
+                                        <a href="" class="lang__item"><span>TIẾNG VIỆT</span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <button class="header-action__btn m-btn m-btn-blue">
+                                <span>Enter invite code</span>
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                    <button class="burger">
+                        <img src="img/burger.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="leaderboard profile-page _tabs-parent">
+                <div class="container">
+                    <div class="leaderboard__inner">
+                        <div class="tabs">
+                            <div class="tab _tab _active" data-tab="_tab1">
+                                <span>My profile</span>
+                            </div>
+                            <div class="tab _tab" data-tab="_tab2">
+                                <span>Invites</span>
+                            </div>
+                        </div>
+                        <div class="leaderboard__col tab-content _tab1 _active">
+                            <div class="profile">
+                                <div class="bridged">
+                                    <div class="bridged__top">
+                                        <div class="bridged__info">
+                                            <div class="h4">
+                                                Bridged
+                                            </div>
+                                            <div class="bridged__nums">
+                                                <div class="currency">
+                                                    <span class="text16 gray-text">0.01</span>
+                                                    <img src="img/eth.svg" alt="">
+                                                </div>
+                                                <div class="currency">
+                                                    <span class="text16 gray-text">0.00</span>
+                                                    <img src="img/usd.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="bridged__btn m-btn m-btn-blue">
+                                            <span>Bridge more</span>
+                                            <img src="img/arrow-right.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="bridged__bottom">
+                                        <div class="text12 gray-text">
+                                            Earning Yield+ Spins for Points
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="level">
+                                    <div class="level__top">
+                                        <div class="h4">
+                                            Level 1
+                                        </div>
+                                        <div class="level__badge">
+                                            <div class="text10">
+                                                <span>0.02 of 5 ETH</span> reward <span>50</span> spin and <span>20</span> invite code
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span style="width: 50%;"></span>
+                                    </div>
+                                    <div class="level__text">
+                                        <div class="text9 gray-text">
+                                            Earn 1 spoin for every 0.1 ETH staked by you or your referrals. Level up with your team and get additional rewards.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bridged tweet">
+                                    <div class="bridged__top">
+                                        <div class="bridged__info">
+                                            <div class="h4">
+                                                Tweet
+                                            </div>
+                                        </div>
+                                        <button class="bridged__btn m-btn m-btn-blue">
+                                            <span>Tweet how</span>
+                                            <img src="img/x.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="bridged__bottom">
+                                        <div class="text12 gray-text">
+                                            For a free spin
+                                        </div>
+                                        <div class="text16 medium-text primary-text">
+                                            6D : 23H : 51M : 21S
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bridged spins">
+                                    <div class="bridged__top">
+                                        <div class="bridged__info">
+                                            <div class="h4">
+                                                <span>0</span> Spins
+                                            </div>
+                                        </div>
+                                        <button class="bridged__btn m-btn m-btn-blue">
+                                            <span>Spin now</span>
+                                        </button>
+                                    </div>
+                                    <div class="bridged__bottom">
+                                        <div class="text12 gray-text">
+                                            Earn <span class="primary-text">1 spin</span> for every <span class="primary-text">0.1 ETH</span> staked by you or your referrals.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rank">
+                                    <div class="rank__info">
+                                        <div class="h4 primary-text">
+                                            #4032
+                                        </div>
+                                        <div class="text12 gray-text">
+                                            Bridge & Invite is Rank Up
+                                        </div>
+                                        <div class="text16 medium-text primary-text">
+                                            Leaderboard Rank
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="faq">
+                                <div class="faq__title">FAQ</div>
+                                <div class="faq__items">
+                                    <div class="qa-card">
+                                        <div class="qa-card__show">
+                                            <div class="qa-card__title">
+                                                <div class="h4">What is Lido on Ethereum?</div>
+                                            </div>
+                                            <button class="qa-card__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="qa-card__hidden">
+                                            <div class="qa-card__text text16 text12-mob gray-text">
+                                                Lido is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and
+                                                <a href="">Polygon blockchain networks</a>. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="qa-card">
+                                        <div class="qa-card__show">
+                                            <div class="qa-card__title">
+                                                <div class="h4">How does Lido work?</div>
+                                            </div>
+                                            <button class="qa-card__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="qa-card__hidden">
+                                            <div class="qa-card__text text16 text12-mob gray-text">
+                                                Lido is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and
+                                                <a href="">Polygon blockchain networks</a>. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="qa-card">
+                                        <div class="qa-card__show">
+                                            <div class="qa-card__title">
+                                                <div class="h4">What is Lido?</div>
+                                            </div>
+                                            <button class="qa-card__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="qa-card__hidden">
+                                            <div class="qa-card__text text16 text12-mob gray-text">
+                                                Lido is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and
+                                                <a href="">Polygon blockchain networks</a>. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="qa-card">
+                                        <div class="qa-card__show">
+                                            <div class="qa-card__title">
+                                                <div class="h4">Why Lido?</div>
+                                            </div>
+                                            <button class="qa-card__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="qa-card__hidden">
+                                            <div class="qa-card__text text16 text12-mob gray-text">
+                                                Lido is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and
+                                                <a href="">Polygon blockchain networks</a>. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="qa-card">
+                                        <div class="qa-card__show">
+                                            <div class="qa-card__title">
+                                                <div class="h4">Do I get my staking rewards if I wrap stETH to wstETH?</div>
+                                            </div>
+                                            <button class="qa-card__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="qa-card__hidden">
+                                            <div class="qa-card__text text16 text12-mob gray-text">
+                                                Lido is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and
+                                                <a href="">Polygon blockchain networks</a>. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="qa-card">
+                                        <div class="qa-card__show">
+                                            <div class="qa-card__title">
+                                                <div class="h4">How can I unwrap wstETH?</div>
+                                            </div>
+                                            <button class="qa-card__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="qa-card__hidden">
+                                            <div class="qa-card__text text16 text12-mob gray-text">
+                                                Lido is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and
+                                                <a href="">Polygon blockchain networks</a>. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="qa-card">
+                                        <div class="qa-card__show">
+                                            <div class="qa-card__title">
+                                                <div class="h4">What is Lido staking APR for Ethereum?</div>
+                                            </div>
+                                            <button class="qa-card__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="qa-card__hidden">
+                                            <div class="qa-card__text text16 text12-mob gray-text">
+                                                Lido is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and
+                                                <a href="">Polygon blockchain networks</a>. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="qa-card">
+                                        <div class="qa-card__show">
+                                            <div class="qa-card__title">
+                                                <div class="h4">What is Lido?</div>
+                                            </div>
+                                            <button class="qa-card__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="qa-card__hidden">
+                                            <div class="qa-card__text text16 text12-mob gray-text">
+                                                Lido is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and
+                                                <a href="">Polygon blockchain networks</a>. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leaderboard__col tab-content _tab2">
+                            <div class="recent-joins">
+                                <div class="recent-joins__top">
+                                    <div class="h4 primary-text">Invites</div>
+                                    <div class="text10 primary-text">
+                                        Total deposit referrals: 12,5 ETH
+                                    </div>
+                                </div>
+                                <div class="recent-joins__items">
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                                <div class="text12 gray-light-text">blast.io/STIJN</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <button data-copy="Text for copy" class="join-item__btn m-btn m-btn-blue">
+                                                <span>Copy link</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                                <div class="text12 gray-light-text">blast.io/STIJN</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <button data-copy="Text for copy" class="join-item__btn m-btn m-btn-blue">
+                                                <span>Copy link</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <div class="text16 gray-text">
+                                                0.1 ETH
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <div class="text16 gray-text">
+                                                0.1 ETH
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <div class="text16 gray-text">
+                                                0.1 ETH
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <div class="text16 gray-text">
+                                                0.1 ETH
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <div class="text16 gray-text">
+                                                0.1 ETH
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <div class="text16 gray-text">
+                                                0.1 ETH
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <div class="text16 gray-text">
+                                                0.1 ETH
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="join-item">
+                                        <div class="join-item__content">
+                                            <div class="avatar">
+                                                <img src="img/avatar2.svg" alt="">
+                                            </div>
+                                            <div class="join-item__info">
+                                                <div class="text16">GlebJessonWill</div>
+                                            </div>
+                                        </div>
+                                        <div class="join-item__time">
+                                            <div class="text16 gray-text">
+                                                0.1 ETH
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
