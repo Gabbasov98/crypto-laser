@@ -92,9 +92,27 @@
 
 
 
-        <!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
-        <!--            Быстрый заказ-->
-        <!--        </button>-->
+        <button data-modal="connectWalletModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            CONNECT WALLET
+        </button>
+        <button data-modal="withdrawModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            withdrawals
+        </button>
+        <button data-modal="congratulationModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Congratulations
+        </button>
+        <button data-modal="disconnectModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Disconnect
+        </button>
+        <button data-alert="depositedAlert" style="border: 2px solid #000;margin-bottom: 20px;">
+            deposited to blast
+        </button>
+        <button data-alert="depositedAlert2" style="border: 2px solid #000;margin-bottom: 20px;">
+            deposited pending to Blast
+        </button>
+        <button data-alert="errorAlert" style="border: 2px solid #000;margin-bottom: 20px;">
+            Platform error text
+        </button>
 
 
         <!--        <code>-->
@@ -116,21 +134,173 @@
 
 
 
-    <div class="modal" id="quickOrder" aria-hidden="true">
-        <div class="modal-dialog">
-            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333" />
-                </svg>
-            </button>
+    <div class="modal" id="connectWalletModal">
+        <div class="modal__bg _close-modal"></div>
 
+        <div class="modal__wrap">
+            <div class="connect-wallet">
+                <div class="modal__title">
+                    <span>CONNECT WALLET</span>
+                </div>
+                <div class="modal__dialog">
+                    <div class="modal__inner">
+                        <div class="modal__tokens">
+                            <button class="m-token">
+                                <img src="img/metamask.svg" alt="">
+                                <span>Metamask</span>
+                            </button>
+                            <button class="m-token">
+                                <img src="img/wallet.svg" alt="">
+                                <span>Wallet connect</span>
+                            </button>
+                        </div>
+                        <div class="modal__hint">
+                            <div class="text16">
+                                By isung Blast, you agree to our Terms of Service and our Privacy Policy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal withdraw-modal" id="withdrawModal">
+        <div class="modal__bg _close-modal"></div>
 
+        <div class="modal__wrap">
+            <div class="connect-wallet">
+                <div class="modal__title">
+                    <span>withdrawals enabled in february</span>
+                </div>
+                <div class="modal__dialog">
+                    <div class="modal__inner">
+                        <div class="modal__hint">
+                            <div class="text16">
+                                Withdrawals will be anabled once the Blast Mainnet launches in February 2024.
+                            </div>
+                        </div>
+                        <div class="modal__nav">
+                            <button class="m-btn m-btn-blue">
+                                <span>Continue</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal congratulation-modal" id="congratulationModal">
+        <div class="modal__bg _close-modal"></div>
+
+        <div class="modal__wrap">
+            <div class="modal__title">
+                <span>Congratulations!</span>
+            </div>
+            <div class="modal__dialog">
+                <div class="modal__inner">
+                    <div class="congratulation-modal__top">
+                        <div class="h4">You earned</div>
+                        <div class="h2">
+                            <span>63.031</span> <br>
+                        BLAST POINTS
+                        </div>
+                    </div>
+                    <div class="text16">
+                        Blast is an L2 with native yield for ETH and stablecoins. Yield makes it possible to create
+                    </div>
+                    <div class="modal__nav">
+                        <button class="m-btn m-btn-blue">
+                            <span>Continue</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal disconnect-modal" id="disconnectModal">
+        <div class="modal__bg _close-modal"></div>
+
+        <div class="modal__wrap">
+            <div class="modal__title">
+                <span>ACCOUNT</span>
+            </div>
+            <div class="modal__dialog">
+                <div class="modal__inner">
+                    <div class="action__split">
+                        <span class="text12 font2 semi-bold-text">CONNECTED WITH METAMASK</span>
+                    </div>
+                    <div class="disconnect-modal__wallet">
+                        <img src="img/avatar2.svg" alt="">
+                        <span class="text16">0x3c4e...5523f2</span>
+                    </div>
+                    <div class="modal__nav">
+                        <button class="m-btn m-btn-blue-outline">
+                            <span>Disconnect</span>
+                        </button>
+                    </div>
+                    <div class="disconnect-modal__action">
+                        <button data-copy="address for copy" class="disconnect-modal__btn">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.33398 7.46663C5.33398 7.11301 5.47446 6.77387 5.72451 6.52383C5.97456 6.27378 6.3137 6.1333 6.66732 6.1333H12.0007C12.3543 6.1333 12.6934 6.27378 12.9435 6.52383C13.1935 6.77387 13.334 7.11301 13.334 7.46663V12.8C13.334 13.1536 13.1935 13.4927 12.9435 13.7428C12.6934 13.9928 12.3543 14.1333 12.0007 14.1333H6.66732C6.3137 14.1333 5.97456 13.9928 5.72451 13.7428C5.47446 13.4927 5.33398 13.1536 5.33398 12.8V7.46663Z" stroke="#434EDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.666 6.13298V4.79964C10.666 4.44602 10.5255 4.10688 10.2755 3.85683C10.0254 3.60678 9.6863 3.46631 9.33268 3.46631H3.99935C3.64573 3.46631 3.30659 3.60678 3.05654 3.85683C2.80649 4.10688 2.66602 4.44602 2.66602 4.79964V10.133C2.66602 10.4866 2.80649 10.8257 3.05654 11.0758C3.30659 11.3258 3.64573 11.4663 3.99935 11.4663H5.33268" stroke="#434EDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Copy address</span>
+                        </button>
+                        <button class="disconnect-modal__btn">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99935 4.7998H3.99935C3.64573 4.7998 3.30659 4.94028 3.05654 5.19033C2.80649 5.44038 2.66602 5.77952 2.66602 6.13314V12.7998C2.66602 13.1534 2.80649 13.4926 3.05654 13.7426C3.30659 13.9927 3.64573 14.1331 3.99935 14.1331H10.666C11.0196 14.1331 11.3588 13.9927 11.6088 13.7426C11.8589 13.4926 11.9993 13.1534 11.9993 12.7998V8.7998" stroke="#434EDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.33398 9.46631L13.334 3.46631" stroke="#434EDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 3.46631H13.3333V6.79964" stroke="#434EDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>View on Ethereum</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert" id="depositedAlert">
+        <img src="img/success3.svg" alt="" class="alert__icon">
+        <div class="alert__message">
+            <div class="alert__nums">
+                <span class="text16 semi-bold-text">0.01</span>
+                <img src="img/eth2.svg" alt="">
+            </div>
+            <div class="text16 medium-text">
+                deposited to blast
+            </div>
+        </div>
+    </div>
+
+    <div class="alert" id="depositedAlert2">
+        <img src="img/pending.svg" alt="" class="alert__icon _small">
+        <div class="alert__message">
+            <div class="alert__nums">
+                <span class="text16 semi-bold-text">0.01</span>
+                <img src="img/eth2.svg" alt="">
+            </div>
+            <div class="text16 medium-text">
+                deposited pending to Blast
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert--error" id="errorAlert">
+        <img src="img/info4.svg" alt="" class="alert__icon _small">
+        <div class="alert__message">
+            <div class="text16 medium-text">
+                Platform error text
+            </div>
         </div>
     </div>
 
 
     <!-- <div class="modal-backdrop show"></div> -->
+
     <!--  -->
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
